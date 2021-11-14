@@ -22,7 +22,6 @@ article img {
 }
 div {
   padding: 5px 10px 5px;
-  
 }
 a {
   font-family: 'Zen Old Mincho', serif;
@@ -31,7 +30,7 @@ p {
   font-family: 'Irish Grover', cursive;
 }
 h2 {
-  display: none;
+  display: block;
 }
 article:nth-child(2n+0) {
   flex-direction: row-reverse;
@@ -40,4 +39,5 @@ article:hover{
   box-shadow: 0 0 5px red;
   background-color: black;
   color: white;
+  
 }
