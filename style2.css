@@ -1,0 +1,39 @@
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  
+
+}
+article {
+  border-collapse: collapse;
+  min-width: 400px;
+ border: 1px solid lightgray;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ border-radius: 15px;
+ overflow: hidden;
+ display: flex;
+ flex-basis: 40%;
+  /*transition: background-color 2s, box-shadow 3s, color 1s;*/
+  transition: all .5s ease-in-out;
+  background: url(./images/forest-of-Brazil.jpg) round;
+  border-radius: 15px;
+}
+article img {
+  width: 40%;
+  object-fit: contain;
+}
+div {
+  padding: 10px;
+}
+article img {
+  display: none;
+}
+article:hover{
+  box-shadow: 0 0 5px red;
+  background-color: rgb(0, 255, 21);
+  color: rgb(0, 255, 42);
+  
+}
