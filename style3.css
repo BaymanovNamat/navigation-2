@@ -1,0 +1,125 @@
+/*Обнуляющий css*/
+* {
+  padding: 0%;
+  margin: 0%;
+  border: 0px;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus, :active {outline: none;}
+a:focus, a:active {
+  outline: none;
+}
+nav, header, footer, aside {display: block;}
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input, button, textarea {
+  font-family: inherit;
+}
+input::-ms-clear {display: none;}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit; font-weight: 400;
+}
+/*---------------------------------------*/
+
+body {
+  padding: 20px;
+  
+}
+.block {
+  background: url(../img/apple-1.jpg)blue 50% 50%/cover no-repeat;
+  padding: 10px;
+  display: inline-block;
+  
+}
+.block div:hover{
+  background-color: darkmagenta;
+}
+
+.block img {
+  width: 100px;
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+}
+.block img:nth-child(odd){
+  box-shadow: 0 0 10px rgb(42, 135, 241);
+  border-radius: 10px;
+}
+.block div a {
+  color: chartreuse;
+}
+.block div p {
+  color: rgb(19, 145, 255);
+}
+.block div p {
+  text-indent: 15px;
+  padding: 25px;
+  font-style: italic;
+  font-weight: 600;
+}
+.block .together {
+  display: flex;
+  justify-content: center;
+  max-width: 200px;
+  border: 2px dotted blue;
+  background-color: green;
+  border-radius: 10px;
+  
+}
+.block a {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  font-family: 'Dancing Script', cursive;
+  font-size: large;
+}
+.block a:nth-of-type(3n+1) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.block div {
+  border: 3px solid purple;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f3c5bd+0,e86c57+50,ea2803+51,ff6600+75,c72200+100;Red+Gloss */
+background: rgb(243,197,189); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(243,197,189,1) 0%, rgba(232,108,87,1) 50%, rgba(234,40,3,1) 51%, rgba(255,102,0,1) 75%, rgba(199,34,0,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  rgba(243,197,189,1) 0%,rgba(232,108,87,1) 50%,rgba(234,40,3,1) 51%,rgba(255,102,0,1) 75%,rgba(199,34,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+.block div div.together a:hover{
+  color: blue;
+}
